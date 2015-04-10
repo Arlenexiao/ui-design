@@ -1,0 +1,177 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	overflow: hidden;
+}
+.overflow-hidden{
+	overflow: hidden;
+}
+.po-relative{
+	position: relative;
+}
+.po-absolute{
+	position: absolute;
+}
+.wid-100{
+	width: 100%;
+}
+.col-fff{
+	color: #fff;
+}
+.col-9d4e5c{
+	color: #9d4e5c;
+}
+.col-837180{
+	color: #837180;
+}
+.btn-w-h{
+	width: 31px;
+	height: 42px;
+}
+.cursor-pointer{
+	cursor: pointer;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.text-left{
+	text-align: left;
+}
+.top-10{
+	top: 10%;
+}
+.top-20{
+	top: 20%;
+}
+.top-35{
+	top: 35%;
+}
+.top-40{
+	top: 40%;
+}
+.top-50{
+	top: 50%;
+}
+.font-size-50{
+	font-size: 50px;
+}
+.top-55{
+	top: 55%;
+}
+.showpage ul{
+	width: 1000%;
+	list-style: none;
+}
+.showpage ul li{
+	float: left;
+	width: 10%;
+	position: relative;
+}
+.btnLeft{
+	z-index: 9999;
+	top: 50%;
+	left: 5px;
+	background: url("../image/arrow-left.png");
+	
+}
+.btnLeft:hover{
+	background: url("../image/arrow-left-hover.png");
+}
+.btnRight{
+	z-index: 9999;
+	top: 50%;
+	right: 5px;
+	background: url("../image/arrow-right.png");
+}
+.btnRight:hover{
+	background: url("../image/arrow-right-hover.png");
+}
+.circle{
+	position:absolute;
+	margin: auto;
+}
+.circle li{
+	border: 1px solid #ccc;
+	width:60px;
+	height:20px; 
+	cursor: pointer; 
+	float:left;
+	margin-right:10px;
+	background:#f2f2f2; 
+}
+.circle .circle-cur{
+	background:#aaa
+}
+.content1 a{ 
+	top: 55%;
+	left: 45%; 
+	width: 200px;
+	height: 80px;
+	border: 2px solid #fff;
+	line-height:80px; 
+	text-decoration:none; 
+	border-radius: 11px;
+	font-size: 25px;
+}
+.content2 a{  
+	top: 35%;
+	left: 45%; 
+	width: 200px;
+	height: 80px;
+	border: 2px solid #fff;
+	line-height:80px; 
+	text-decoration:none; 
+	border-radius: 11px;
+	font-size: 25px;
+}
+.content3 a{ 
+	top: 35%;
+	left: 58%; 
+	width: 200px;
+	height: 80px;
+	border: 2px solid #fff;
+	line-height:80px; 
+	text-decoration:none; 
+	border-radius: 11px;
+	font-size: 25px;
+	background-color: rgba(255,255,255,0.8);
+}
+.content2 h1{
+	position: absolute;
+	width: 100%;
+	top: 10%;
+	font-size:50px;
+	color: #9d4e5c;
+}
+
+.content2 b{
+	position: absolute;
+	width: 600px;
+	top:20%;
+	left: 35%;
+	font-size:20px;
+	text-align: center;
+	color: #837180
+}
+
+.content3 h1{
+	position: absolute;
+	width: 100%;
+	top: 10%;
+	font-size:50px;
+	color: #9d4e5c;
+}
+
+.content3 b{
+	position: absolute;
+	width: 600px;
+	top:20%;
+	left: 37%;
+	font-size:20px;
+	color: #837180;
+	text-align: right;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <script type="text/javascript" src="js/jquery-1.4.4.js"></script>
+	<script type="text/javascript" src="js/movePerfect.js"></script>
+	<title>slide</title>
+    <style type="text/css">
+       *{margin:0px;padding:0px;list-style-type:none;overflow:hidden;}
+       .display{display: none;}
+       #showpage{       	
+       	position: relative;
+       	overflow:hidden;
+        width: 100%;  
+       }
+       #showpage ul{
+        width:500%;
+        overflow: hidden;
+        position: relative;
+        list-style: none;
+       }
+
+       #showpage ul li{
+       	float: left;
+        width:20%;
+       }
+        #showpage ul li img{
+       	width:100%;
+       }
+
+       a{position: absolute;top: 50%;}
+       	#btnLeft{position: absolute; top:400px;left: 5px; z-index: 99}
+       	#btnRight{position: absolute;top:400px;right: 5px;z-index: 99}
+.text-center{position: absolute;text-align: center;}
+.title1{width: 20%;top: 50%;font-size:50px;color: #9d4e5c;}
+
+.circle{position:absolute;left: 40px;top: 600px;}
+.circle li{border: 1px solid #ccc;width:60px;height:20px;float:left;margin-right:10px;background:#f2f2f2}
+.circle .circle-cur{background:#aaa}
+    </style>
+</head>
+<script type="text/javascript">
+
+var pageNum=1;
+var pageWidth=$(window).width();
+var arrLeft=[0,-pageWidth,-pageWidth*2,-pageWidth*3,-pageWidth*4];
+$(document).ready(function(){
+  //alert($(window).width())
+  
+   $('#ulPage').css('left',-pageWidth+'px')
+    $('#btnRight').click(function(){
+     pageNum++;     
+     //$('#ulPage').css('left',-pageWidth*pageNum+'px')
+     $('#ulPage').animate({left:arrLeft[pageNum]},"slow",function(){
+      
+      if(pageNum==4)
+      {
+        $('#ulPage').css('left',-pageWidth+'px');
+        pageNum=1;
+      }
+      circle();
+     });
+  })
+    $('#btnLeft').click(function(){  
+     pageNum--;
+     var offset=pageWidth*pageNum+'px'
+     //$('#ulPage').css('left',pageWidth*pageNum+'px')
+     $('#ulPage').animate({left:arrLeft[pageNum]},"slow",function(){
+      
+      if(pageNum==0)
+      {
+        $('#ulPage').css('left',-pageWidth*3+'px');
+        pageNum=3;
+      }
+      circle();
+     });
+  })
+
+    $(".circle li").click(function(){
+         var nextindex = $(this).index();
+         pageNum=nextindex+1
+         $('#ulPage').animate({left:arrLeft[pageNum]},"slow")
+         
+         circle();
+  });
+});
+window.onresize = function(){
+    pageWidth=$(window).width();
+    arrLeft=[0,-pageWidth,-pageWidth*2,-pageWidth*3,-pageWidth*4];
+    $('#ulPage').css('left',arrLeft[pageNum]+'px');
+}
+function circle(){      
+    $(".circle li").removeClass("circle-cur");
+    $(".circle li").eq(pageNum-1).addClass("circle-cur");
+            
+}
+function onMouseOver1(obj)
+{
+  $('#btnLeft .nohover').addClass('display');
+  $('#btnLeft .ishover').removeClass('display');
+}
+function onMouseOut1(obj)
+{
+  $('#btnLeft .nohover').removeClass('display');
+  $('#btnLeft .ishover').addClass('display');
+}
+function onMouseOver2(obj)
+{
+  $('#btnRight .nohover').addClass('display');
+  $('#btnRight .ishover').removeClass('display');
+}
+function onMouseOut2(obj)
+{
+  $('#btnRight .nohover').removeClass('display');
+  $('#btnRight .ishover').addClass('display');
+}
+</script>
+<body>
+    <div id="btnLeft" onmouseover="onMouseOver1(this)" onmouseout="onMouseOut1(this)"><img src="image/arrow-left.png"  class="nohover"><img src="image/arrow-left-hover.png" class="ishover display"></div>
+    <div id="btnRight"  onmouseover="onMouseOver2(this)" onmouseout="onMouseOut2(this)"><img src="image/arrow-right.png"  class="nohover"><img src="image/arrow-right-hover.png" class="ishover display"></div>
+<div id="showpage">
+    <ul id="ulPage">
+      <li>
+          <div class="textDiv"><h1 class="title1 text-center">Page 3</h1></div>
+          <img src="image/full-width-img-one.jpg">          
+      </li>
+	    <li>
+          <div class="textDiv"><h1 class="title1 text-center">FULL WIDTH IMAGE SLIDER</h1></div>
+          
+	        <img src="image/full-width-img-two.jpg">	        
+	    </li>
+      <li>
+          <div class="textDiv"><h1 class="title1 text-center">Page 2</h1></div>
+          <img src="image/full-width-img-one.jpg">          
+      </li>
+      <li>
+          <div class="textDiv"><h1 class="title1 text-center">Page 3</h1></div>
+          <img src="image/full-width-img-one.jpg">
+      </li>
+      <li>
+          <div class="textDiv"><h1 class="title1 text-center">FULL WIDTH IMAGE SLIDER</h1></div>
+          
+          <img src="image/full-width-img-two.jpg">          
+      </li>
+	</ul>
+</div>
+
+<ul class="circle">
+
+<li class="circle-cur"></li>
+<li></li>
+<li></li>
+
+</ul>
+	
+</body>
+</html>
