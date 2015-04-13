@@ -62,11 +62,14 @@
 .top-55{
 	top: 55%;
 }
-.showpage ul{
+.showpage{
+	text-align: center;
+}
+.showpage .ulPage{
 	width: 1000%;
 	list-style: none;
 }
-.showpage ul li{
+.showpage .ulPage li{
 	float: left;
 	width: 10%;
 	position: relative;
@@ -91,12 +94,14 @@
 	background: url("../image/arrow-right-hover.png");
 }
 .circle{
-	position:absolute;
-	margin: auto;
+	position:absolute;	
+	bottom: 10px;
+	display: inline-block;
 }
 .circle li{
 	border: 1px solid #ccc;
-	width:60px;
+	border-radius: 50px;
+	width:20px;
 	height:20px; 
 	cursor: pointer; 
 	float:left;
