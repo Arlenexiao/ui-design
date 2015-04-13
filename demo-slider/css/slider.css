@@ -130,7 +130,7 @@
 }
 .content3 a{ 
 	top: 35%;
-	left: 58%; 
+	right: 20%; 
 	width: 200px;
 	height: 80px;
 	border: 2px solid #fff;
@@ -160,8 +160,9 @@
 
 .content3 h1{
 	position: absolute;
-	width: 100%;
+	
 	top: 10%;
+	right: 20%;
 	font-size:50px;
 	color: #9d4e5c;
 }
@@ -170,7 +171,7 @@
 	position: absolute;
 	width: 600px;
 	top:20%;
-	left: 37%;
+	right: 20%;
 	font-size:20px;
 	color: #837180;
 	text-align: right;
