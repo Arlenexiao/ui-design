@@ -65,18 +65,17 @@
 .showpage{
 	text-align: center;
 }
-.showpage .ulPage{
+.ulPage{
 	width: 1000%;
 	list-style: none;
 }
-.showpage .ulPage li{
+.ulPage li{
 	float: left;
 	width: 10%;
 	position: relative;
 }
 .btnLeft{
-	z-index: 9999;
-	top: 50%;
+	z-index: 99;
 	left: 5px;
 	background: url("../image/arrow-left.png");
 	
@@ -85,8 +84,7 @@
 	background: url("../image/arrow-left-hover.png");
 }
 .btnRight{
-	z-index: 9999;
-	top: 50%;
+	z-index: 99;
 	right: 5px;
 	background: url("../image/arrow-right.png");
 }
@@ -180,4 +178,77 @@
 	font-size:20px;
 	color: #837180;
 	text-align: right;
+}
+.showPic{
+
+	width:720px;
+	height: 620px; 
+	background-color: #f3f3f3;
+}
+.picPage{
+	width: 1000%;
+	list-style: none;
+}
+.picPage li{
+	float: left;
+	width: 10%;
+	position: relative;
+}
+
+.circlePic{
+	position:absolute;	
+	width: 1000%;
+}
+.circlePic li{
+	border: 4px solid #f3f3f3;
+	width:144px;
+	height:96px; 
+	cursor: pointer; 
+	float:left;
+	margin-right:10px;
+	background:#f2f2f2; 
+}
+.circlePic .circle-cur{
+	border: 4px solid #f9cda2;
+}
+.mark_left{
+	position: absolute;
+	width: 360px;
+	height: 480px;
+	cursor: pointer;
+	z-index: 9999;
+}
+.mark_right{
+	position: absolute;
+	right: 0px;
+	width: 360px;
+	height: 480px;
+	cursor: pointer;
+	z-index: 9999;
+}
+.picBar{
+	width: 645px;
+	height: 104px;
+	left: 40px;
+	bottom: -15px;
+	position: relative;
+}
+.barLeft{
+	z-index: 99;
+	bottom: 44px;
+	left: 5px;
+	background: url("../image/arrow-left.png");
+	
+}
+.barLeft:hover{
+	background: url("../image/arrow-left-hover.png");
+}
+.barRight{
+	bottom: 44px;
+	z-index: 99;
+	right: 5px;
+	background: url("../image/arrow-right.png");
+}
+.barRight:hover{
+	background: url("../image/arrow-right-hover.png");
 }
