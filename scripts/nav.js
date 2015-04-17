@@ -43,7 +43,6 @@ window.onresize = function(){
     $(".mainlevel").find('a').removeClass("arrowbg");
    if(pageWidth<=750)
    	$(".mainlevel").find('ul').removeClass("position_absolute");
-   	$(".mainlevel").find('ul').removeClass("position_absolute");
    else
    	$(".mainlevel").find('ul').addClass("position_absolute");
 }
