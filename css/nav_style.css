@@ -350,3 +350,21 @@
 .nav-sort > li:last-child {
     border-right: none;
 }
+.nav-sort > li > a:hover,
+.nav-sort > li.active > a{
+    color: #26a9af;
+}
+.form-search{
+    margin-top: 12px;
+}
+.form-search > input[type="text"]{
+    border: 1px solid #fff;
+}
+.form-search > button{
+    border: 1px solid #57b6bb;
+    background: #57b6bb;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #fff;
+    margin-left: -4px;
+}
