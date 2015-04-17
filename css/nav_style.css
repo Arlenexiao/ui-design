@@ -46,8 +46,10 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
-.nav > li > a.arrowbg:hover {
+.mainlevel ul{
+    display: none;
+}
+.nav > li > a.arrowbg {
     border-top: 3px solid #7ec8cc;
     background: url('../image/nav-hover-bg.png') no-repeat center bottom #82d6da;
 }
