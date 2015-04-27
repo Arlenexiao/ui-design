@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>form</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/global_style.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <!--[if lte IE 8]>
+       <link rel="stylesheet" type="text/css" href="../css/lte_ie8_hack.css" />
+       <script src="../script/respond.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="containt-fluid content">
+        <div class="menu">
+            <ul>
+                <li>UI组件</li>
+                <li class="active"><a href="form.html">表单排版</a></li>
+                <li><a href="button.html">按钮</a></li>
+                <li><a href="dropdown-menu.html">表单元素</a></li>
+                <li><a href="nav.html">导航</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="content-center">
+                <h3 class="text-center">表单</h3>
+                <form>
+                    <legend>紧凑形式</legend>
+                    <fieldset>
+                        <input type="text" placeholder="名字" />
+                        <input type="tel" placeholder="电话" />
+                        <input type="email" placeholder="邮件" />
+                        <input type="password" placeholder="密码" />
+                        <button type="submit">提交</button>
+                    </fieldset>
+                </form>
+                <form>
+                    <legend>堆叠形式</legend>
+                    <fieldset>
+                        <label>名字</label>
+                        <input type="text" placeholder="名字" />
+                        <label>电话</label>
+                        <input type="tel" placeholder="电话" />
+                        <label>邮件</label>
+                        <input type="email" placeholder="邮件" />
+                        <label>密码</label>
+                        <input type="password" placeholder="密码" />
+                        <button type="submit">提交</button>
+                    </fieldset>
+                </form>
+                <form>
+                    <legend>表格形式</legend>
+                    <fieldset>
+                        <label>名字</label>
+                        <input type="text" placeholder="名字" />
+                        <label>电话</label>
+                        <input type="tel" placeholder="电话" />
+                        <label>邮件</label>
+                        <input type="email" placeholder="邮件" />
+                        <label>密码</label>
+                        <input type="password" placeholder="密码" />
+                        <button type="submit">提交</button>
+                    </fieldset>
+                </form>
+                <form>
+                    <legend>响应式形式</legend>
+                    <fieldset>
+                        <div class="col-xs-12 col-sm-3">
+                            <label>名字</label>
+                            <input type="text" placeholder="名字" />
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <label>电话</label>
+                            <input type="tel" placeholder="电话" />
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <label>邮件</label>
+                            <input type="email" placeholder="邮件" />
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <label>密码</label>
+                            <input type="password" placeholder="密码" />
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <button type="submit">提交</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <form>
+                    <legend>分组形式</legend>
+                    <fieldset>
+                        <input type="text" placeholder="名字" />
+                        <input type="tel" placeholder="电话" />
+                        <input type="email" placeholder="邮件" />
+                    </fieldset>
+                    <fieldset>
+                        <input type="password" placeholder="密码" />
+                        <input type="password" placeholder="确认密码" />                      
+                    </fieldset>  
+                     <button type="submit">提交</button>
+                </form>
+                <form>
+                    <legend>验证表单</legend>
+                    <fieldset>
+                        <input type="tel" placeholder="电话" required />
+                        <input type="email" placeholder="邮件" required />
+                    </fieldset>
+                </form>
+                <form>
+                    <legend>禁止表单</legend>
+                    <fieldset>
+                        <input type="tel" placeholder="电话" disabled />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/jquery-1.4.4.js"></script>
+</body>
+
+</html>
